@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#" class = "logo">WebXR</a>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#XR">XR</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class = "Banner-area" id = "home"></div>
+        <div class = "text">
+            <h1>Welcome to LAM!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ad ullam ipsam, quos id exercitationem illum, totam expedita nisi deserunt sapiente at minus officia quis nam harum adipisci, doloribus fuga.</p>
+        </div>
+    <div class = "News-area" id = "news"></div>
+        <div class = "text">
+            <h1>What's LAM about?</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero dolorem tempora omnis blanditiis cumque minima officiis nisi nulla reiciendis esse! In porro laborum doloremque itaque error, voluptatem laboriosam corrupti molestiae!</p>
+        </div>
+    <div class = "Info-area" id = "about"></div>
+        <div class = "text">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat doloremque distinctio non praesentium ipsa rerum sequi quisquam esse odit! Cupiditate adipisci cumque modi sequi tempore tenetur atque labore. Atque!</p>
+        </div>
+    <div class="XR-area" id = "XR"></div>
+        <div class = "text">
+            <h1>XR</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quis animi debitis neque nobis ipsa totam quos tenetur recusandae temporibus. Consequuntur, in? Sunt eligendi deleniti quas doloremque quis, molestias rem.</p>
+        </div> 
+    <div class = "Contact-area" id = "contact"></div>
+        <div class = "text">
+            <h1>Our Contact Page</h1>
+            <p>Developers</p>
+        </div>   
+    <!-- Tekst recht zetten-->
+    <!-- Image -->
+    <!-- WebXR -->
+    <!-- Contacts Page -->
+</body>
+<style>
+
+    
+    body {
+        background-color: rgb(255, 255, 255);
+        font-family: 'Patua One', cursive;
+    }
+    
+    .navbar {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(95, 95, 95);
+        width: 100%;
+        height: 70px;
+        z-index: 1;
+        
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: right;
+        list-style: none;
+        margin-right: 15%;
+    }
+
+    .logo {
+        flex: 1 1 auto;
+        margin-left: 10%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    a {
+        margin: 15px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    a:hover {
+        color: #000;
+    }
+
+    .Banner-area {
+        position: relative;
+        background-image: url(LAM-1.jpg);
+        width: 100%;
+        height: 100vh;
+        margin-right: 15px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .News-area, .Contact-area, .Info-area, .XR-area {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: 300px;
+    }
+
+    .text{
+        width: 90%;
+        height: 80%;
+    }
+</style>
+</html>
