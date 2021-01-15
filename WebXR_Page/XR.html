@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Font reference-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <!--WebXR Resources-->
+    <script src="library\aframe.js"></script>
+    <script src="library\ma-webxr.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
     
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="#" class = "logo">WebXR</a>
+        <a href="#" class = "logo">eWbXR</a>
         <ul class="nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#news">News</a></li>
@@ -22,33 +27,35 @@
     </div>
     <div class = "Banner-area" id = "home"></div>
         <div class = "text">
-            <h1>Welcome to LAM!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ad ullam ipsam, quos id exercitationem illum, totam expedita nisi deserunt sapiente at minus officia quis nam harum adipisci, doloribus fuga.</p>
+            <h1>Welkoom bij het LAM!</h1>
+            <p>Welkom bij ons LAM WebXR site! Hier komt u te weten te komen over wat het LAM nou eigenlijk is en wat u kunt verwachten van het LAM.</p>
         </div>
     <div class = "News-area" id = "news"></div>
         <div class = "text">
-            <h1>What's LAM about?</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero dolorem tempora omnis blanditiis cumque minima officiis nisi nulla reiciendis esse! In porro laborum doloremque itaque error, voluptatem laboriosam corrupti molestiae!</p>
+            <h1>Wat is het LAM?</h1>
+            <p>Het LAM is in een kort het Lisser Art Museum. Het LAM zit vol met allemaal verschillende soorten kunst. Van schilderijen tot abstracte kunst, het is er. Het LAM is voor alle leeftijden van jong t/m oud. </p>
         </div>
     <div class = "Info-area" id = "about"></div>
         <div class = "text">
             <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat doloremque distinctio non praesentium ipsa rerum sequi quisquam esse odit! Cupiditate adipisci cumque modi sequi tempore tenetur atque labore. Atque!</p>
+            <p>Wij zijn opkomende softwaredevelopers in opleiding van het Mediacollege Amsterdam. Aan ons was de taak gegeven om een WebXR site te maken. </p>
         </div>
     <div class="XR-area" id = "XR"></div>
         <div class = "text">
             <h1>XR</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quis animi debitis neque nobis ipsa totam quos tenetur recusandae temporibus. Consequuntur, in? Sunt eligendi deleniti quas doloremque quis, molestias rem.</p>
-        </div> 
+        </div>
+    <!-- Hier begint het WebXR component -->
+    <a-scene background="color: white" embedded></a-scene>
+    <!-- Hier eindigt het WebXR component -->        
     <div class = "Contact-area" id = "contact"></div>
         <div class = "text">
             <h1>Our Contact Page</h1>
-            <p>Developers</p>
+            <h2>Developers</h2>
+            <ul>
+                <li>Jayden Macbean(macbeanjayden@gmail.com)</li>
+                <li>Jordan Ross(32171@ma-web.nl)</li>
+            </ul>
         </div>   
-    <!-- Tekst recht zetten-->
-    <!-- Image -->
-    <!-- WebXR -->
-    <!-- Contacts Page -->
 </body>
 <style>
 
@@ -118,12 +125,18 @@
         flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
-        height: 300px;
+        height: 150px;
     }
 
     .text{
         width: 90%;
         height: 80%;
     }
+
+    a-scene {
+        width: 700px;
+        height: 700px;
+    }
+
 </style>
 </html>
