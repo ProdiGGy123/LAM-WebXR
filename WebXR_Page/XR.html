@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LAM WebXR</title>
     <!--Font reference-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <!--WebXR Resources-->
-    <script src="library\aframe.js"></script>
-    <script src="library\ma-webxr.js"></script>
+    <script src="library/aframe.js"></script>
+    <script src="library/ma-webxr.js"></script>
     <script src="app.js"></script>
 </head>
 <body>
     
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="#" class = "logo">eWbXR</a>
+        <a class = "logo">WebXR</a>
         <ul class="nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#news">News</a></li>
@@ -27,7 +27,7 @@
     </div>
     <div class = "Banner-area" id = "home"></div>
         <div class = "text">
-            <h1>Welkoom bij het LAM!</h1>
+            <h1>Welkom bij het LAM!</h1>
             <p>Welkom bij ons LAM WebXR site! Hier komt u te weten te komen over wat het LAM nou eigenlijk is en wat u kunt verwachten van het LAM.</p>
         </div>
     <div class = "News-area" id = "news"></div>
@@ -57,6 +57,7 @@
             </ul>
         </div>   
 </body>
+
 <style>
 
     
@@ -76,6 +77,8 @@
         width: 100%;
         height: 70px;
         z-index: 1;
+        margin-left: -8px;
+        
         
     }
     
@@ -115,6 +118,11 @@
         background-repeat: no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
+        padding-right: 16px;
+        margin-left: -8px;
+        margin-top: -8px;
+        
+        
     }
 
     .News-area, .Contact-area, .Info-area, .XR-area {
