@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Patua One', cursive;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(95, 95, 95);
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    margin-left: -8px;
+    
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
+}
+
+.logo {
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+a {
+    margin: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #000;
+}
+
+.Banner-area {
+    position: relative;
+    background-image: url(LAM-1.jpg);
+    width: 100%;
+    height: 100vh;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-right: 16px;
+    margin-left: -8px;
+    margin-top: -8px;
+    
+    
+}
+
+.News-area, .Contact-area, .Info-area, .XR-area {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+}
+
+.text{
+    width: 90%;
+    height: 80%;
+}
+
+a-scene {
+    width: 700px;
+    height: 700px;
+}
