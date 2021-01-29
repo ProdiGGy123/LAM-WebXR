@@ -85,8 +85,8 @@ class VRElement {
         this.elem.setAttribute(`width`, this.height);
     }
 
-    setPosition(x, y, z) {
-        this.position.x = x;
+    setPosition(X, y, z) {
+        this.position.x = X;
         this.position.y = y;
         this.position.z = z;
 
