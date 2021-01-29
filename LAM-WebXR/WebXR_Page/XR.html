@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    <html {
+        scroll-behavior: smooth;
+    }></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +14,7 @@
     <script src="library/aframe.js"></script>
     <script src="library/ma-webxr.js"></script>
     <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -28,17 +32,17 @@
     <div class = "Banner-area" id = "home"></div>
         <div class = "text">
             <h1>Welkom bij het LAM!</h1>
-            <p>Welkom bij ons LAM WebXR site! Hier komt u te weten te komen over wat het LAM nou eigenlijk is en wat u kunt verwachten van het LAM. Het museum LAM.</p>
+            <p>Welkom bij onze LAM WebXR webpagina! Hier vindt u alle informatie die u te weten kunt komen over wat het LAM nou eigenlijk is en wat u kunt verwachten van het LAM. Wij zullen zoveel mogelijk informatie weergeven op deze website, en zelfs een Virtual realitie ervaring inplanteren in deze website (die hieronder weergeven staat), voor een kijk binnen het Lisser Art Museum. Dit is om uw ervaring als bezoeker en gebruiker van onze website een aangename ervaring te geven. </p>
         </div>
     <div class = "News-area" id = "news"></div>
         <div class = "text">
-            <h1>Wat is het LAM?</h1>
-            <p>Het LAM is in een kort het Lisser Art Museum. Het LAM zit vol met allemaal verschillende soorten kunst. Van schilderijen tot abstracte kunst, het is er. Het LAM is voor alle leeftijden van jong t/m oud. </p>
+            <h1>Wat is het LAM museum?</h1>
+            <p>Het LAM museum staat voor Lisser Art Museum. Het Lisser Art Museum staat bekend als het foodart museum in de wereld. Aangezien het gloednieuw en bomvol staat met inernationale topstukken van grootse kunstwerken. Het Lisser Art museum wordt vooral gezien als erg inofatief en persoonlijk anders laat kijken. Het LAM zit vol met allemaal verschillende soorten kunst. Van schilderijen tot abstracte kunst, het is er allemaal te zien. Het LAM is voor alle leeftijden van jong t/m oud. Dit komt door de super persoonlijke aanpak die het museum aanbied aan de bezoekers. Op deze manier krijg je een kunst ervaring op maat en geniet iedereen enorm van het bezoek.  </p>
         </div>
     <div class = "Info-area" id = "about"></div>
         <div class = "text">
             <h1>About Us</h1>
-            <p>Wij zijn opkomende softwaredevelopers in opleiding van het Mediacollege Amsterdam. Aan ons was de taak gegeven om een WebXR site te maken. </p>
+            <p>Wij zijn de ontwerpers en developers van deze webpagina. wij zijn eerste jaars opkomende softwaredevelopers in opleiding, van het Mediacollege in Amsterdam. Dit was een eindopdracht voor onze beroeps leerweg, aan ons was de taak gegeven om een WebXR site te maken over het bekende museum lisser art museum. Op deze website was het de bedoeling om de bezoekers zoveel mogelijk te betrekken in de webpagina en het gevoel te geven alsof u echt in het museum was door middel van een virtual realitie element te implanteren, helaas is dit ons niet gelukt vanwege enkele errors, maar dit weerhield ons niet in de afronding van ons project. We hebben nu een foto slider geimplanteerd voor deze website die een mooi beeld zou moeten geven van de bekende kunstwerken van het museum. Ik hoop dat u heeft genoten van onze website, en laat ons eventueel nog weten hoe wij de ervaring voor de bezoekers nog beter kunnen maken.</p>
         </div>
     <div class="XR-area" id = "XR"></div>
         <div class = "text">
@@ -66,93 +70,4 @@
         </div>      
 </body>
 
-<style>
-
-    
-    body {
-        background-color: rgb(255, 255, 255);
-        font-family: 'Patua One', cursive;
-    }
-    
-    .navbar {
-        position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: rgb(95, 95, 95);
-        width: 100%;
-        height: 70px;
-        z-index: 1;
-        margin-left: -8px;
-        
-        
-    }
-    
-    .nav {
-        display: flex;
-        justify-content: right;
-        list-style: none;
-        margin-right: 15%;
-    }
-
-    .logo {
-        flex: 1 1 auto;
-        margin-left: 10%;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: bold;
-        font-size: 35px;
-    }
-
-    a {
-        margin: 15px;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    a:hover {
-        color: #000;
-    }
-
-    .Banner-area {
-        position: relative;
-        background-image: url(LAM-1.jpg);
-        width: 100%;
-        height: 100vh;
-        margin-right: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        background-size: cover;
-        padding-right: 16px;
-        margin-left: -8px;
-        margin-top: -8px;
-        
-        
-    }
-
-    .News-area, .Contact-area, .Info-area, .XR-area {
-        position: relative;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: 100%;
-        height: 150px;
-    }
-
-    .text{
-        width: 90%;
-        height: 80%;
-    }
-
-    a-scene {
-        width: 700px;
-        height: 700px;
-    }
-
-</style>
 </html>
