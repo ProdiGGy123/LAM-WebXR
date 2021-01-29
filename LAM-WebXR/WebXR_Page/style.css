@@ -1,4 +1,6 @@
-
+    *{
+        box-sizing: border-box;
+    }
     body {
         background-color: rgb(255, 255, 255);
         font-family: 'Patua One', cursive;
@@ -21,6 +23,7 @@
         height: 70px;
         z-index: 1;
         margin-left: -8px;
+        margin-top: -9px;
         
         
     }
@@ -52,21 +55,83 @@
         color: #000;
     }
 
-    .Banner-area {
-        position: relative;
-        background-image: url(LAM-1.jpg);
+    .container {
+        height: 100%;
         width: 100%;
+        overflow:hidden;
+    }
+
+    .imageSlider {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .imageSlider, .slide {
+        position: relative;
+        object-fit: cover;
+        width: 3000px;
         height: 100vh;
-        margin-right: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        background-size: cover;
-        padding-right: 16px;
-        margin-left: -8px;
         margin-top: -8px;
         
-        
     }
+    
+
+    .slider-controls {
+        z-index: 9;
+        width: 90%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .slider-controls svg {
+        height: 30px;
+        width: 30px;
+        transition: all 300ms ease;
+        cursor: pointer;
+
+    }
+
+    .slider-controls svg path {
+        fill: rgb(0, 0, 0);
+    }
+
+    .sliderIndicactors {
+        z-index: 9;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        gap: 10px;
+    }
+
+    .sliderIndicactors, .indicator {
+        height: 3px;
+        width: 30px;
+        background-color: rgb(255, 255, 255);
+        background-repeat: 3px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(179, 218, 255, 0.877)),(rgba(0,0,0,0.5));
+    }
+
+
+    
 
     .News-area, .Contact-area, .Info-area, .XR-area {
         position: relative;
