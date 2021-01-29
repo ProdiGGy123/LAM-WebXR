@@ -130,17 +130,5 @@
         }
         imageSlider.style.transform = "translateX(" + -(currentSlide * 1000) + "px)";
     })
-    prevButton.addEventListener('click', ()=>{
-        if(currentSlide < 0){
-
-            currentSlide = SlideZaImage.length - 1;
-        }
-        else {
-
-            currentSlide--;
-
-        }
-        imageSlider.style.transform = "translateX(" + -(currentSlide * 1000) + "px)";
-    })
 </script>
 </html>
