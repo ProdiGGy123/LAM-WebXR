@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <!-- Navigation Bar -->
     <div class="navbar">
         <a class = "logo">WebXR</a>
@@ -28,10 +29,6 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
-<<<<<<< HEAD
-    <div class = "Banner-area" id = "home"></div>
-    <img src="" alt="">
-=======
     <div class = "Banner-area" id = "home"></div>  
         <div class="container">
             <div class="imageSlider">
@@ -71,7 +68,6 @@
 
             <div class="overlay"></div>
         </div>
->>>>>>> 6a274cd4c0507408e6bdf3af7ad57163842fba18
         <div class = "text">
             <h1>Welkom bij het LAM!</h1>
             <p>Welkom bij onze LAM WebXR webpagina! Hier vindt u alle informatie die u te weten kunt komen over wat het LAM nou eigenlijk is en wat u kunt verwachten van het LAM. Wij zullen zoveel mogelijk informatie weergeven op deze website, en zelfs een Virtual realitie ervaring inplanteren in deze website (die hieronder weergeven staat), voor een kijk binnen het Lisser Art Museum. Dit is om uw ervaring als bezoeker en gebruiker van onze website een aangename ervaring te geven. Het gebouw van Lisser Art museum is een erg modern gebouw dat is ontworpen door Arie Korbie van KVDK Architecten, in 2015 zijn ze vervolgens begonnen met de opbouw van het gebouw. Alleen het museum bevindt zich op een bijzondere plek, het gebouw is namelijk gelijnd in het landgoed van Keukenhof, dit is erg bijzonder want als je goed kijkt zie je verschillende elementen van een boom terugkomen in het gebouw, op deze manier vormt het moderne gezicht van het LAM museum een spannend contrast met het klassieke kasteel van Keukenhof. in 2018 werd dit speciale gebouw geopend als het Lisser Art museum. En wat het zo bijzonder maakt is het openbare pad dat dwars door het museum loopt, op deze manier kunnen mensen altijd de kunst beleven zonder dat ze het museum bezoeken. ( Het museum is door dit bijzondere gebouw door verschillende internationale architectuurprijzen genomineerd.</p>
@@ -111,8 +107,6 @@
             </ul>
         </div>      
 </body>
-<<<<<<< HEAD
-=======
 <script>
     const imageSlider = document.querySelector(".imageSlider");
 
@@ -136,6 +130,19 @@
         }
         imageSlider.style.transform = "translateX(" + -(currentSlide * 1000) + "px)";
     })
+    prevButton.addEventListener('click', ()=>{
+        if(currentSlide < 0){
+
+            currentSlide = SlideZaImage.length - 1;
+        }
+        else {
+
+            currentSlide--;
+
+        }
+        imageSlider.style.transform = "translateX(" + -(currentSlide * 1000) + "px)";
+    })
 </script>
->>>>>>> 6a274cd4c0507408e6bdf3af7ad57163842fba18
+</html>
+</script>
 </html>
