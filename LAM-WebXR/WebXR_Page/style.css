@@ -57,7 +57,7 @@
 
     .container {
         height: 100%;
-        width: 100%;
+        max-width: 4536px;
         overflow:hidden;
     }
 
@@ -71,7 +71,25 @@
     .imageSlider, .slide {
         position: relative;
         object-fit: cover;
-        width: 3000px;
+        width: 4536px;
+        height: 100vh;
+        margin-top: -8px;
+        
+    }
+
+    .imageSlider, .slide2 {
+        position: relative;
+        object-fit: cover;
+        width: 4536px;
+        height: 100vh;
+        margin-top: -8px;
+        
+    }
+
+    .imageSlider, .slide3 {
+        position: relative;
+        object-fit: cover;
+        width: 4536px;
         height: 100vh;
         margin-top: -8px;
         
@@ -83,7 +101,7 @@
         width: 90%;
         position: absolute;
         display: flex;
-        align-items: center;
+        align-items: right;
         justify-content: space-between;
         top: 50%;
         left: 50%;
@@ -91,15 +109,19 @@
     }
 
     .slider-controls svg {
-        height: 30px;
-        width: 30px;
+        height: 50px;
+        width: 50px;
         transition: all 300ms ease;
         cursor: pointer;
 
     }
 
     .slider-controls svg path {
-        fill: rgb(0, 0, 0);
+        fill: rgb(255, 255, 255);
+    }
+
+    .slider-controls svg path:hover {
+        fill: #000;
     }
 
     .sliderIndicactors {
